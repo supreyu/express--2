@@ -1,63 +1,59 @@
 
-# Todo Application
+# RunRecordApp
 
-## Overview
-
-This Todo application is a simple yet powerful tool designed to help users manage their tasks and requirements efficiently. It offers a range of functionalities tailored to enhance task management, including the ability to add, edit, delete, and search for tasks. Users can mark tasks as ongoing or completed, attach images to tasks, share tasks with others, and view tasks in a calendar format. This application is developed using the Expo framework to leverage its cross-platform capabilities and ease of use.
+RunRecordApp is a mobile application designed for fitness enthusiasts to track, log, and share their running experiences. Built with React Native and leveraging the Expo framework, this app offers real-time location tracking, run path mapping, and comprehensive workout metrics calculation.
 
 ## Features
 
-1. **Add New Tasks**: Users can add new tasks with descriptions.
-2. **Delete Tasks**: Allows users to remove tasks that are no longer needed.
-3. **Edit Tasks**: Users can modify the details of existing tasks.
-4. **Search Tasks**: Features a search functionality to quickly find tasks.
-5. **Mark Tasks**: Tasks can be marked as either in progress or completed.
-6. **Attach Images**: Users can attach images from their camera or photo library to tasks.
-7. **Share Tasks**: The application includes functionality to share tasks with others.
-8. **Calendar View**: Tasks can be viewed in a calendar, providing a visual timeline of tasks.
+- **Real-Time Location Tracking:** Utilizes the device's GPS to track your running path in real-time.
+- **Workout Metrics:** Calculates and displays key metrics such as distance, speed, and running time.
+- **Media Capture:** Capture the moment with integrated camera functionality or choose images from the gallery.
+- **Geolocation Tagging:** Tag your workout with your current location for a detailed activity log.
+- **Record Management:** View, edit, and delete your past workout records with ease.
+
+## Technology Stack
+
+- **Frontend:** React Native
+- **Navigation:** React Navigation v5
+- **Storage:** AsyncStorage for local storage solutions
+- **Other Libraries:** Expo Location, Expo Image Picker
 
 ## Getting Started
 
-To get started with the Todo application, ensure you have Expo CLI installed on your system. If not, you can install it using npm:
+### Prerequisites
 
-```sh
-npm install -g expo-cli
-```
+- Node.js
+- npm or Yarn
+- Expo CLI
 
 ### Installation
 
-Clone the repository to your local machine:
+1. Clone the repository:
 
-```sh
-git clone https://github.com/wlt1128/TodoListApp.git
-cd todo-application
+```bash
+git clone https://github.com/edward0810/RunRecordApp.git
 ```
 
-Install the dependencies:
+2. Navigate to the project directory:
 
-```sh
-expo install expo-image-picker expo-location @react-native-async-storage/async-storage
-npm install react-native-calendars react-native-vector-icons
+```bash
+cd RunRecordApp
 ```
 
-### Starting the Server
+3. Install dependencies:
 
-To start the Expo server and run the application, execute:
+```bash
+npm install
+```
 
-```sh
+
+4. Start the application:
+
+```bash
 npx expo start
 ```
 
-This command will open a browser window with the Expo developer tools. You can then run the application on a physical device using the Expo Go app or on an emulator.
+## Usage
 
-## Dependencies
-
-- **expo-image-picker**: For selecting images from the device's camera or photo library.
-- **expo-location**: To obtain the device's geographical location information.
-- **@react-native-async-storage/async-storage**: For persistent storage of data on the device.
-- **react-native-calendars**: Displays a calendar component within the app.
-- **react-native-vector-icons**: Utilized for incorporating icons within the application.
-
-Please note that `react-native-calendars` and `react-native-vector-icons` require additional setup. Refer to their official documentation for guidance.
-
+To use the RunRecordApp, follow the on-screen instructions to track your runs, capture photos, and review your workout history. Ensure your device's location services are enabled to accurately track your running path.
 
